@@ -1,0 +1,11 @@
+["You planted some Marijuana!", false] spawn domsg;
+_plant = "cup_bolsevnik_group" createvehicle (getpos player);
+sleep 120;
+if !(alive _plant) exitWith {};
+["Marijuana will be ready in 120 seconds", false] spawn domsg;
+sleep 120;
+if !(alive _plant) exitWith {};
+_plant setVariable ["doneGrowing", true, true];
+["Marijuana Plant is Ready", false] spawn domsg;
+sleep 800;
+if (alive _plant) then { deletevehicle _plant };
