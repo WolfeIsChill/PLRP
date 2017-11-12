@@ -27,6 +27,8 @@ class Luke_M_Functions {
 		class PaintballMenu {};
 		class PaintballMessage {};
 		class PaintballRefreshMenu {};
+		class StringToArray {};
+		class VariableConstant {};
 		class WhitelistLoad {};
 	};
 };

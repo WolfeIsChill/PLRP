@@ -32,7 +32,7 @@ switch (_this select 0) do {
     [format ["[ADMIN_LOG] %1 has ran command %2", player getVariable ["realname", name player], _this select 0], "(call PLRP_Staff_Rank) >= 4"] remoteExec ["LS_fnc_Notification", -2];
   };
   case "Teleport 2 Me": {
-    [] call admin_fnc_tele2me;
+    ["OPEN"] call admin_fnc_tele2me;
     [format ["[ADMIN_LOG] %1 has ran command %2", player getVariable ["realname", name player], _this select 0], "(call PLRP_Staff_Rank) >= 4"] remoteExec ["LS_fnc_Notification", -2];
   };
   case "10M Clean Up": {

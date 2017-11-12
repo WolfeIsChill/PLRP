@@ -5,6 +5,7 @@
 
 switch (_this select 0) do {
   case "OPEN": {
+    if (!createDialog "UI_CompSystem") exitWith { hint "Dialog Error - (UI_CompSystem)" };
     PLRP_TeleportableUnits = playableUnits;
     {
       lbAdd [1500, format ["%1 - %2", _x getVariable ["realname", name player], _x]]

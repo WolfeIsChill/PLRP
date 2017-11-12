@@ -9,7 +9,7 @@ camUseNVG false;
 for "_x" from 0 to 20 do { _x cutRsc ["introLife", "PLAIN"] };
 
 _camera = "camera" camCreate [(position player select 0)+5, position player select 1, (position player select 2) + _camDistance];
-_camera cameraEffect ["internal","back"];
+_camera cameraEffect ["internal", "back"];
 _camera camSetTarget vehicle player;
 _camera camSetFOV 1.000;
 _camera camCommit 2;

@@ -142,7 +142,7 @@ class ui_BankPin {
     {
     	idc = 1612;
     	text = "ENTER"; //--- ToDo: Localize;
-      action = "PLRP_CharacterInfo set [count PLRP_CharacterInfo, PLRP_BankPin]; closeDialog 0; createDialog ""UI_CreateLogin"";";
+      action = "PLRP_CharacterInfo set [count PLRP_CharacterInfo, PLRP_BankPin]; closeDialog 0; createDialog ""UI_Login"";";
     	x = 0.515469 * safezoneW + safezoneX;
     	y = 0.522 * safezoneH + safezoneY;
     	w = 0.0464063 * safezoneW;

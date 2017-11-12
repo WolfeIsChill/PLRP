@@ -8,4 +8,4 @@ _playerTeam = player getVariable ["PLRP_PaintballTeam", ""];
 
 if (_playerTeam == "") exitWith { systemChat "[Paintball Error] Could not leave team as player does not have a team." };
 
-[player] remoteExec ["LS_fnc_PaintballRemoveUser", 2];
+[player] remoteExecCall ["LS_fnc_PaintballRemoveUser", 2];

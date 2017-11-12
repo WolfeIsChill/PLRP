@@ -11,6 +11,9 @@ if (!(_this select 0)) exitWith {}; //Not server
 master_group attachTo [bank_obj, [0,0,0]];
 carSalesmanList = [];
 publicVariable "carSalesmanList";
+
+INTERACTION_OBJECT setVariable ["Luke_PB_Information", [], true];
+
 onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 
 [8,true,true,12] execFSM "core\fsm\timeModule.fsm";

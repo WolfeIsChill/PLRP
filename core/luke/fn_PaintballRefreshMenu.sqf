@@ -27,8 +27,8 @@ switch (player getVariable ["PLRP_PaintballTeam", ""]) do {
     ctrlEnable [1600, true];
     ctrlEnable [1601, false];
 
-    buttonSetAction [1600, "[] call LS_fnc_PaintballLeave; [] call LS_fnc_PaintballRefreshMenu;"];
-    buttonSetAction [1601, "['RED_TEAM'] call LS_fnc_PaintballJoin; [] call LS_fnc_PaintballRefreshMenu;"];
+    buttonSetAction [1600, "[] spawn LS_fnc_PaintballLeave; [] spawn LS_fnc_PaintballRefreshMenu;"];
+    buttonSetAction [1601, "['RED_TEAM'] spawn LS_fnc_PaintballJoin; [] spawn LS_fnc_PaintballRefreshMenu;"];
   };
   case "RED_TEAM": {
     ctrlSetText [1600, "Join Blue Team"];
@@ -37,8 +37,8 @@ switch (player getVariable ["PLRP_PaintballTeam", ""]) do {
     ctrlEnable [1600, false];
     ctrlEnable [1601, true];
 
-    buttonSetAction [1600, "['BLUE_TEAM'] call LS_fnc_PaintballJoin; [] call LS_fnc_PaintballRefreshMenu;"];
-    buttonSetAction [1601, "[] call LS_fnc_PaintballLeave; [] call LS_fnc_PaintballRefreshMenu;"];
+    buttonSetAction [1600, "['BLUE_TEAM'] spawn LS_fnc_PaintballJoin;"];
+    buttonSetAction [1601, "[] spawn LS_fnc_PaintballLeave;"];
   };
   default {
     ctrlSetText [1600, "Join Blue Team"];
@@ -47,7 +47,7 @@ switch (player getVariable ["PLRP_PaintballTeam", ""]) do {
     ctrlEnable [1600, true];
     ctrlEnable [1601, true];
 
-    buttonSetAction [1600, "['BLUE_TEAM'] call LS_fnc_PaintballJoin; [] call LS_fnc_PaintballRefreshMenu;"];
-    buttonSetAction [1601, "['RED_TEAM'] call LS_fnc_PaintballJoin; [] call LS_fnc_PaintballRefreshMenu;"];
+    buttonSetAction [1600, "['BLUE_TEAM'] spawn LS_fnc_PaintballJoin;"];
+    buttonSetAction [1601, "['RED_TEAM'] spawn LS_fnc_PaintballJoin;"];
   };
 };

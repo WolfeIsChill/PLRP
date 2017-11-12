@@ -55,7 +55,7 @@ class ui_Paintball {
     {
     	idc = 1600;
     	text = "Join Blue Team"; //--- ToDo: Localize;
-      action = "['BLUE_TEAM'] call LS_fnc_PaintballJoin;";
+			action = "['BLUE_TEAM'] spawn LS_fnc_PaintballJoin;";
     	x = 0.381406 * safezoneW + safezoneX;
     	y = 0.61 * safezoneH + safezoneY;
     	w = 0.113437 * safezoneW;
@@ -65,7 +65,7 @@ class ui_Paintball {
     {
     	idc = 1601;
     	text = "Join Red Team"; //--- ToDo: Localize;
-      action = "['RED_TEAM'] call LS_fnc_PaintballJoin;";
+      action = "['RED_TEAM'] spawn LS_fnc_PaintballJoin;";
     	x = 0.505156 * safezoneW + safezoneX;
     	y = 0.61 * safezoneH + safezoneY;
     	w = 0.113437 * safezoneW;

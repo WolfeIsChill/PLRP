@@ -1,7 +1,7 @@
 waitUntil {!(isNull (findDisplay 46))};
 disableSerialization;
 
-4 cutRsc ["osefStatusBar","PLAIN"];
+4 cutRsc ["osefStatusBar", "PLAIN"];
 
 [] spawn {
 	uiSleep 5;
